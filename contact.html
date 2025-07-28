@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO Meta Tags -->
+    <title>Contact Us | Rivera Connect 2025</title>
+    <meta name="description" content="Have questions about Rivera Connect 2025? Contact our team via email, Discord, or Matrix for support, press inquiries, or partnership opportunities.">
+    <meta name="keywords" content="Rivera Connect contact, contact tech conference, Rivera support, Rivera Discord, Rivera Matrix, tech event help">
+    <link rel="canonical" href="https://rivera-conf-website.pages.dev/contact">
+    <!-- Favicon placeholder - replace with actual favicon path -->
+    <link rel="icon" type="image/x-icon" href="https://placehold.co/32x32/0a0a0a/ffffff?text=RC">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rivera-conf-website.pages.dev/contact">
+    <meta property="og:title" content="Contact Us | Rivera Connect 2025">
+    <meta property="og:description" content="Find all the ways to get in touch with the Rivera Connect team. We're available on Email, Discord, and Matrix.">
+    <meta property="og:image" content="https://yt3.googleusercontent.com/GtzGdCHAHS9XovHMXVIkg9OiK-X1OqyhuTr5x7RfU4XsXsjD-_2uKerG1ok_csfTTs0pvpGP=s900-c-k-c0x00ffffff-no-rj">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://rivera-conf-website.pages.dev/contact">
+    <meta property="twitter:title" content="Contact Us | Rivera Connect 2025">
+    <meta property="twitter:description" content="Find all the ways to get in touch with the Rivera Connect team. We're available on Email, Discord, and Matrix.">
+    <meta property="twitter:image" content="https://yt3.googleusercontent.com/GtzGdCHAHS9XovHMXVIkg9OiK-X1OqyhuTr5x7RfU4XsXsjD-_2uKerG1ok_csfTTs0pvpGP=s900-c-k-c0x00ffffff-no-rj">
+
+    <!-- Tailwind CSS & Google Fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Rivera",
+        "url": "https://riveraos.pages.dev/",
+        "logo": "https://yt3.googleusercontent.com/GtzGdCHAHS9XovHMXVIkg9OiK-X1OqyhuTr5x7RfU4XsXsjD-_2uKerG1ok_csfTTs0pvpGP=s900-c-k-c0x00ffffff-no-rj",
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "contactType": "customer support",
+                "email": "hello@riveraconnect.com",
+                "areaServed": "Worldwide",
+                "availableLanguage": "English"
+            },
+            {
+                "@type": "ContactPoint",
+                "contactType": "press inquiries",
+                "email": "press@riveraconnect.com",
+                "areaServed": "Worldwide",
+                "availableLanguage": "English"
+            }
+        ]
+    }
+    </script>
+
+    <!-- Custom Styles (Same as main page for consistency) -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #e5e5e5;
+        }
+        .hero-gradient {
+            background: radial-gradient(ellipse at 50% 50%, rgba(38, 78, 112, 0.3), rgba(10, 10, 10, 0) 70%);
+        }
+        .section-glow::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            height: 80%;
+            background: radial-gradient(circle, rgba(29, 78, 216, 0.10) 0%, rgba(29, 78, 216, 0) 70%);
+            z-index: -1;
+            pointer-events: none;
+        }
+        .card-glow {
+            transition: all 0.3s ease-in-out;
+            position: relative;
+            overflow: hidden;
+            border-radius: 0.75rem; /* Ensure rounded corners for cards */
+        }
+        .card-glow:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 0 15px rgba(29, 78, 216, 0.4);
+            border-color: #2563EB;
+        }
+        /* Custom styles for button hover effect */
+        .btn-tickets:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(37, 99, 235, 0.4);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+<!-- Header Section -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-black/30 backdrop-blur-lg border-b border-gray-800">
+    <div class="container mx-auto px-4">
+        <nav class="flex items-center justify-between h-20">
+            <a href="/" class="text-2xl font-bold text-white">Rivera Connect</a>
+            <!-- Removed navigation links for desktop -->
+            <a href="/#tickets" class="hidden md:inline-block bg-blue-700 text-white font-semibold px-6 py-2 rounded-lg btn-tickets" style="transition: all 0.3s ease;">Get Tickets</a>
+            <button id="mobile-menu-button" class="md:hidden text-white">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+    </div>
+    <!-- Mobile Menu - Only "Get Tickets" -->
+    <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-4 space-y-2">
+        <a href="/#tickets" class="block bg-blue-700 text-white font-semibold px-6 py-2 rounded-lg mt-2 text-center btn-tickets">Get Tickets</a>
+    </div>
+</header>
+
+<main>
+    <!-- Contact Hero Section -->
+    <section class="relative flex items-center justify-center text-center overflow-hidden pt-40 pb-20">
+        <div class="hero-gradient absolute inset-0"></div>
+        <div class="relative z-10 container mx-auto px-4">
+            <h1 class="text-5xl md:text-7xl font-black text-white leading-tight mb-4">
+                Get in Touch
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
+                We're here to help. Reach out to us through your preferred channel.
+            </p>
+            <div class="mt-6 mx-auto h-1 w-24 bg-blue-600 rounded"></div>
+        </div>
+    </section>
+
+    <!-- Contact Methods Section -->
+    <section class="py-20 md:py-24 relative section-glow">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+                <!-- Email Card -->
+                <a href="mailto:hello@riveraconnect.com" class="card-glow block bg-gray-900/50 border border-gray-800 p-8 rounded-xl text-center transition-all duration-300">
+                    <div class="flex justify-center mb-4">
+                        <!-- Replaced original SVG with a cleaner email icon -->
+                        <svg class="w-12 h-12 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Email</h3>
+                    <p class="text-gray-400 mb-4">For general inquiries, support, and press questions.</p>
+                    <p class="text-blue-400 font-semibold text-lg break-all">hello@riveraconnect.com</p>
+                </a>
+
+                <!-- Discord Card -->
+                <a href="https://discord.gg/e9nFeejkNh" target="_blank" rel="noopener noreferrer" class="card-glow block bg-gray-900/50 border border-gray-800 p-8 rounded-xl text-center transition-all duration-300">
+                    <div class="flex justify-center mb-4">
+                        <!-- Replaced original SVG with a cleaner Discord icon -->
+                        <svg class="w-12 h-12 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19.7913 4.3698A19.7913 19.7913 0 0014.8092 2.825c-.4446.5448-.8143 1.1598-1.0938 1.8298-2.2858-.4748-4.5817-.4748-6.8675 0-.2795-.67-.6492-1.285-1.0938-1.8298A19.7913 19.7913 0 003.683 4.3698c-2.4752 5.4198-1.2252 10.2048.8143 13.8098.9844.9748 2.2094 1.7198 3.5986 2.2748.4446-.5448.8143-1.1598 1.0938-1.8298-1.1694-.3998-2.2094-1.0148-3.0488-1.8298.4446.3148.8891.6298 1.3337.8698.9844.4748 1.9688.8698 3.0488 1.1598.6492.2398 1.2984.4748 1.9688.5448.67.075 1.3337.075 2 0 .67-.07 1.3192-.305 1.9688-.5448.9844-.29 1.9688-.685 3.0488-1.1598.4446-.24.8891-.555 1.3337-.8698-1.0144.9-2.0544 1.52-3.2238 1.915.2795.67.6492 1.285 1.0938 1.8298 1.3892-.555 2.6142-1.3 3.5986-2.2748 2.0395-3.605 3.2895-8.39.8143-13.8098zM12 15.6448c-1.4795 0-2.6848-1.28-2.6848-2.86s1.2053-2.86 2.6848-2.86c1.4795 0 2.6848 1.28 2.6848 2.86s-1.2053 2.86-2.6848 2.86zm-4.7619-2.86c0 1.58 1.2053 2.86 2.6848 2.86s2.6848-1.28 2.6848-2.86-1.2053-2.86-2.6848-2.86-2.6848 1.28-2.6848 2.86z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Discord</h3>
+                    <p class="text-gray-400 mb-4">Join our community server for live chat and support.</p>
+                    <p class="text-blue-400 font-semibold text-lg">Join Server</p>
+                </a>
+
+                <!-- Matrix Card -->
+                <a href="https://matrix.to/#/#rivera-connect:matrix.org" target="_blank" rel="noopener noreferrer" class="card-glow block bg-gray-900/50 border border-gray-800 p-8 rounded-xl text-center transition-all duration-300">
+                     <div class="flex justify-center mb-4">
+                        <!-- Replaced original SVG with a cleaner Matrix icon -->
+                        <svg class="w-12 h-12 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zM8.5 15.5h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V5.5h2v2zm4 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V5.5h2v2zm4 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V5.5h2v2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Matrix</h3>
+                    <p class="text-gray-400 mb-4">For those who prefer a decentralized, open network.</p>
+                    <p class="text-blue-400 font-semibold text-lg break-all">#rivera-connect:matrix.org</p>
+                </a>
+
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer Section -->
+<footer class="bg-black border-t border-gray-800 mt-20">
+    <div class="container mx-auto px-4 py-12">
+        <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <div class="mb-4 md:mb-0">
+                <h3 class="text-xl font-bold text-white">Rivera Connect</h3>
+                <p class="text-gray-400">© 2025 Rivera</p>
+            </div>
+            <div class="flex space-x-6 flex-wrap justify-center md:justify-start">
+                <a href="https://riveraos.pages.dev/" class="text-gray-400 hover:text-white transition-colors py-1">RiveraOS</a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors py-1">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors py-1">Code of Conduct</a>
+                <a href="/contact" class="text-white hover:text-white transition-colors py-1">Contact</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Mobile Menu Toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when a link is clicked (only "Get Tickets" remains)
+    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+    mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+    });
+</script>
+
+</body>
+</html>
